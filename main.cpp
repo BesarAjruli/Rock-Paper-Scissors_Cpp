@@ -26,6 +26,7 @@ int main()
         2 - Scissors
         */
         {
+            // Rock
         case 0:
             Robot == 2
                 ? cout << "You won!" << endl
@@ -33,6 +34,7 @@ int main()
                 ? cout << "It's a tie!"
                 : cout << "You lost" << endl;
             break;
+            // Paper
         case 1:
             Robot == 0
                 ? cout << "You won!" << endl
@@ -40,6 +42,7 @@ int main()
                 ? cout << "It's a tie!"
                 : cout << "You lost" << endl;
             break;
+            //Scissors
         case 2:
             Robot == 1
                 ? cout << "You won!" << endl
