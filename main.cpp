@@ -4,8 +4,7 @@ using namespace std;
 
 int main()
 {
-    int User, Robot;
-    bool result;
+    int User, Robot, result;
 
     Robot = rand() % 3;
 
@@ -28,27 +27,59 @@ int main()
         {
             // Rock
         case 0:
-            Robot == 2
-                ? cout << "You won!" << endl
-            : Robot == 0
-                ? cout << "It's a tie!"
-                : cout << "You lost" << endl;
+            if (Robot == 2)
+            {
+                cout << "You won!" << endl;
+                result = 1;
+            }
+            else if (Robot == 0)
+            {
+                cout << "It's a tie!" << endl;
+                result = -1;
+            }
+            else
+            {
+                cout << "You lost" << endl;
+                result = 0;
+            }
             break;
+
             // Paper
         case 1:
-            Robot == 0
-                ? cout << "You won!" << endl
-            : Robot == 1
-                ? cout << "It's a tie!"
-                : cout << "You lost" << endl;
+            if (Robot == 0)
+            {
+                cout << "You won!" << endl;
+                result = 1;
+            }
+            else if (Robot == 1)
+            {
+                cout << "It's a tie!" << endl;
+                result = -1;
+            }
+            else
+            {
+                cout << "You lost" << endl;
+                result = 0;
+            }
             break;
-            //Scissors
+
+            // Scissors
         case 2:
-            Robot == 1
-                ? cout << "You won!" << endl
-            : Robot == 2
-                ? cout << "It's a tie!"
-                : cout << "You lost" << endl;
+            if (Robot == 1)
+            {
+                cout << "You won!" << endl;
+                result = 0;
+            }
+            else if (Robot == 0)
+            {
+                cout << "It's a tie!" << endl;
+                result = -1;
+            }
+            else
+            {
+                cout << "You lost" << endl;
+                result = 0;
+            }
             break;
         default:
             break;
