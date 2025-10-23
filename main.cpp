@@ -20,6 +20,11 @@ int main()
     else
     {
         switch (User)
+        /*
+        0 - Rock
+        1 - Paper
+        2 - Scissors
+        */
         {
         case 0:
             Robot == 2
@@ -29,9 +34,16 @@ int main()
                 : cout << "You lost" << endl;
             break;
         case 1:
-            Robot == 2
+            Robot == 0
                 ? cout << "You won!" << endl
-            : Robot == 0
+            : Robot == 1
+                ? cout << "It's a tie!"
+                : cout << "You lost" << endl;
+            break;
+        case 2:
+            Robot == 1
+                ? cout << "You won!" << endl
+            : Robot == 2
                 ? cout << "It's a tie!"
                 : cout << "You lost" << endl;
             break;
