@@ -5,13 +5,14 @@ using namespace std;
 int main()
 {
     int User, Robot, result;
+    char answer;
 
     Robot = rand() % 3;
 
     while (true)
     {
         cout << "Pick a sing using the number in front:\n0 - Rock\n1 - Paper\n2 - Scissors" << endl;
-        if(cin >> User && (User >= 0 && User <= 2))
+        if (cin >> User && (User >= 0 && User <= 2))
         {
             break;
         }
@@ -90,5 +91,11 @@ int main()
         break;
     }
 
-    return 0;
+    cout << "Do you want to play again? (y/n): ";
+    cin >> answer;
+    if (answer == 'y' || answer == 'Y')
+    {
+        main();
+    }
+        return 0;
 }
