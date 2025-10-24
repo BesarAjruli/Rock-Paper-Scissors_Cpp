@@ -24,6 +24,8 @@ int main()
         }
     }
 
+   cout << "Robot picked: " << (Robot == 0 ? "Rock": Robot == 1? "Paper": "Scissors") << endl;
+
     switch (User)
     /*
     0 - Rock
